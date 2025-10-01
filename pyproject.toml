@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "Exemplo de agentes para busca de vagas disponíveis"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "google-adk>=1.15.1",
+]
 
 [project.scripts]
 busca-vaga = "src.main:main"

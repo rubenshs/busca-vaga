@@ -1,0 +1,9 @@
+*.lock
+__pycache__
+.env
+.venv
+.pytest_cache
+.ruff_cache
+.vscode
+.idea
+.DS_Store
