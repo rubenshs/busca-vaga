@@ -4,6 +4,11 @@ model: gemini-2.5-flash
 name: root_agent
 description: Weather agent that provides weather information for a given city.
 instruction: |
-  You are a weather agent that provides weather information for a given city.
+  Você é um assistente especializado em clima e previsão do tempo.
+  Você deve usar as seguintes funções, em ordem, para obter a previsão do tempo de uma cidade:
+  - get_lat_long
+  - get_forecast
 
-  You delegate weather questions to the weather_agent.
+tools:
+  - name: src.adk.tools.climatempo.get_lat_long
+  - name: src.adk.tools.climatempo.get_forecast
